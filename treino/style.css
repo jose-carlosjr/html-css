@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Love Larry';
+    src: url('fonts/love larry ttf.ttf') format('truetype');
+}
+
+body {
+    background-color: #e9bedc;
+}
+
+h1 {
+    text-align: center;
+    color: #dcaae9;
+    font-size: 3em;
+}
+
+h2 {
+    color: #7a099c;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2em; 
+}
+
+p {
+    text-align: justify;
+    color: white;
+}
+
+#principal {
+    width: 800px;
+    height: 1000px;
+    background-color: #7a099c;
+    margin: auto;
+    padding: 10px;
+}
+
+#first {
+    margin: 10px;
+    background-color: #dcaae9;
+    width: 385px;
+    height: 385px;
+    border-radius: 20px;
+}
+
+#first > p {
+    text-align: justify;
+    padding: 0px 10px 10px 10px;
+    font-size: 25px;
+    color: black;
+    text-indent: 40px;
+    font-family: Bebas Neue;
+}
+
+#second {
+    margin: 10px;
+    background-color: #dcaae9;
+    width: 385px;
+    height: 385px;
+    border-radius: 20px;
+}
+
+#second > p {
+    text-align: justify;
+    padding: 0px 10px 10px 10px;
+    font-size: 25px;
+    color: black;
+    text-indent: 40px;
+    font-family: Bebas Neue;
+}

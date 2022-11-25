@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+O id com o mesmo nome só pode ser usado em uma única tag, por exemplo nao dá pra usar id=principal em uma tag h1 e o mesmo id=principal para outra tag h1
+
+já o class permite fazer isso
+*/
+
+body {
+    background-color: rgb(71, 155, 127);
+}
+
+h1#principal {
+    background-color: darkolivegreen;
+    color: aliceblue;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(0, 88, 12);
+}
+
+h2 {
+    color: rgb(15, 179, 0);
+}
+
+.basico {
+    color: rgb(179, 152, 0);
+    text-decoration: underline;
+}
+
+.intermediario {
+    color: rgb(179, 81, 0);
+    text-decoration: underline;
+}
+
+.avancado {
+    color: rgb(179, 27, 0);
+    text-decoration: underline;
+}
+
+.destaque {
+    background-color: rgb(57, 57, 211);
+}

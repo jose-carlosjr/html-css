@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('OpenType');
+    font-weight: normal;
+}
+
+/*IMPORTANTE
+    SEMPRE QUE UM ARQUIVO FOR CHAMADO DE UMA PASTA ANTERIOR, DEVE-SE COLOCAR DOIS PONTOS (..) PARA FAZER COM Q SE ENTENDA Q É PRA VOLTAR UMA PASTA E ABRIR OUTRA PARA PEGAR O ARQUIVO DE DENTRO DELA. UM PONTO INDICA A PRÓPRIA PASTA, DOIS PONTOS INDICA A PASTA ANTERIOR
+*/
+
+:root {
+    --cor1: #D1B5DE;
+    --cor2: #8C12C4;
+    --cor3: #670D91;
+    --cor4: #381B45;
+    --cor5: #310645;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue';
+    --font-title: 'Android';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px #0000006b;
+    font-weight: normal;
+}
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--font-padrao);
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px #0000006b;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px 0px #00000098;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: .5s;
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+}
+
+main {
+    max-width: 900px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #0000005b;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    /*OU
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    */
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--font-title);
+    font-weight: normal;
+    font-size: 1.6em;
+}
+
+main h2 {
+    color: var(--cor4);
+    font-family: var(--font-title);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 2px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px -10px;
+    box-shadow: 3px 3px 8px #00000049;
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    color: var(--cor1);
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*NÃO É COMPATÍVEL COM TODO NAVEGADOR*/
+    list-style-position: inside; /*USEI PRO ESPAÇO DA CHECK LIST RESPEITAR O PADDING LATERAL*/
+    columns: 2;
+    padding: 10px 10px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 5px 2px;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
