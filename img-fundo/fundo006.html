@@ -8,20 +8,28 @@
     <style>
         body {
             height: 97.5vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat: repeat-y;
-            background-size: content;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
             /*background-size: contain | faz com q a imagem de fundo seja sempre mostrada por completo*/
             /*background-size: cover | faz a imagem ocupar sempre 100% da viewport, mesmo q pra isso ela tenha q ser cortada*/
+
+            /* Shorthand - background
+                color > image > position > repeat > (Size) > Attachment
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            /*por algum motivo os navegadores nao aceitam o size na shorthand*/
+            background-size: cover;
         }
 
         main {
             background-color: white;
             padding: 10px;
             margin: auto;
-            width: 400px;
+            max-width: 700px;
             border-radius: 15px;
             border: 1px solid blue;
         }
