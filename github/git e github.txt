@@ -1,0 +1,16 @@
+OBS | ORIGIN: TUDO Q É DO REPOSITÓRIO REMOTO
+
+Caso não consiga acessar seus repositórios quando logar no github desktop de uma outra máquina vá na aba file > Options > Git. Confere os dois campos de texto e cloca em "Save".
+
+Quando deslogar de uma máquina, para não deixar nada seu nela: 
+
+1) Aba Repository > Remove > Clicar em Remove. Detalhe: Fechar todas as outras aplicações, inclusive vscode por exemplo, e tbm marcar a opção "Also move this repository to Recycle Bin"
+
+2)
+Aba File > Options > Na aba Accounts clicar em Sign out
+
+3)
+Aba File > Options > Git e deletar oq se econtra nas caixas de texto e clicar em save
+
+4)
+Esvaziar a lixeira
