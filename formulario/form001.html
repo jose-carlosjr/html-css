@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+
+    <!-- <INPUT NAME="" ID=""> NAME É IMPORTANTE PARA USAR COM HTML E PHP. ID PARA A LABEL E JAVASCRIPT-->
+
+    <!--PARA RETIRAR AS OPÇÕES QUE A CAIXA DE TXT OFERECE DE ACORDO COM O Q FOI ESCRITO ANTERIORMENTE, USAR AUTOCOMPLETE="OFF"-->
+
+    <!--PARA FAZER COM QUE OS DADOS DIGITADOS NAS CAIXAS DE TEXTO NÃO SEJAM ACRESCENTADOS NA URL, UTILIZAR METHOD="POST". POR PADRÃO O FORM VEM COM METHOD="GET  "-->
+    
+    <!--USAR O MÉTODO GET QUANDO OS DADOS SOLICITADOS NÃO FOREM "SENSÍVEIS", TIPO UMA PESQUISA NO GOOGLE | MÉTODO GET ACEITA NO MÁXIMO 3000 BYTES, APROXIMADAMENTE 3000 LETRAS-->
+    
+    <!--MÉTODO POST USADO PARA DADOS SENSÍVEIS COMO DADOS DE CARTÃO DE CRÉDITO, DADOS DE CADASTRO ETC. TBM USADO PARA ENVIAR ARQUIVOS. NÃO EXISTE UMA DIFERENÇA SIGNICATIVA NA VELOCIDADE DOS DOIS MÉTODOS-->
+
+    <form action="cadastro.php" method="post" autocomplete="off"> 
+        <p> <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p> <label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
